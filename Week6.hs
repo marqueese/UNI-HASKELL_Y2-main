@@ -86,4 +86,3 @@ productSquareroots2 = foldr (*) 1 . map (sqrt . fromIntegral)
 reverse2 :: [a] -> [a]
 reverse2 = foldl (flip (:)) []
 
-

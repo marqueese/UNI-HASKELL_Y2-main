@@ -179,7 +179,7 @@ removeValue value (Node x xs)
 
 
 highestTemp :: [(String, Int)] -> Int
-highestTemp [] = 0 --one value
+highestTemp [(_, temp)] = temp
 highestTemp ((_, temp):xs)
     | temp > highestTemp xs = temp
     | otherwise = highestTemp xs
